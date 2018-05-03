@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AcadySoft</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=8" >
+        <link type="text/css" href="css/smoothness/jquery-ui-1.8.22.custom.css" rel="Stylesheet" >
+        <link type="text/css" href="css/common.css" rel="Stylesheet" >
+        <script src="js/jquery/jquery-1.7.2.js" type="text/javascript"></script>
+        <script src="js/jquery/jquery-ui-1.8.22.custom.min.js" type="text/javascript"></script>
+        <script src="js/utility.js" type="text/javascript"></script>
+        <script src="js/ajouter_ouvrage.js" type="text/javascript"></script>
+
+
+    </head>
+    <body>
+        <div id="header">
+            <IMG SRC="images\upg_logo.jpg" NAME="upg" BORDER="0" PADDING="0" HEIGHT="30" WIDTH="150" style ="float:right">
+            <h1>
+                AcadySoft
+            </h1>  
+            <label id="devise" style="text-align:center;color:blue;">  Savoir     Créativité       Développement  </label>
+        </div>
+        <div id="nav_menu">
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="subscribe.html">S'inscrire</a></li> 
+                <li><a href="cancel.html">Annuler l'inscription</a></li> 
+                <li><a href="lists.html">Listes</a></li>
+            </ul>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <form name="GetOuvrageServlet" method="POST" accept-charset="utf-8">
+                    <input type="button" id="delete" value="Delete" style="width:90px; padding:0px ;" onclick="this.disabled = true;">
+                    <table class="resulttable" id="resulttable">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 20px;"></th>
+                                <th scope="col" style="width: 150px;">Titre</th>
+                                <th scope="col" style="width: 100px;">Auteur</th>
+                                <th scope="col" style="width: 100px;">Editeur</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
